@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/searchview"
+        android:layout_height="58dp"
+        android:layout_width="match_parent"
+        android:elevation="20dp"
+        android:fitsSystemWindows="true"
+        app:floatingSearch_close_search_on_keyboard_dismiss="false"
+        app:floatingSearch_dimBackground="true"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_leftActionColor="@color/colorPrimary"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_searchHint="Search Here...."
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_hintTextColor="@color/colorPrimary"
+        app:floatingSearch_suggestionsListAnimDuration="300"
+        />
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        />
+
+</LinearLayout>
